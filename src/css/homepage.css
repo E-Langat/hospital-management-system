@@ -1,0 +1,59 @@
+#homepage .header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--DarkskyBlue);
+    color: var(--RegalBlue);
+    border-radius: 0 0 40px 40px;
+    padding: 10px;
+    margin: 0 100px;
+}
+
+#homepage .header header {
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5em;
+}
+
+#homepage .header p {
+    font-size: 2em;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#homepage .one {
+    padding-right: 30px;
+    width: 350px;
+}
+
+#homepage .one .hospital-description {
+    color: var(--RegalBlue);
+    font-size: 1.2em;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 0 0 25px 0;
+}
+
+#homepage .one .hospital-description p {
+    font-weight: 900;
+}
+
+#homepage .one .hospital-description img {
+    padding: 15px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid var(--RegalBlue);
+}
+
+#homepage .one .homepage-links {
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage .one .homepage-links h2 {
+    background-color: var(--DullBlue);
+    margin: 10px 10px 5px 0;
+    padding: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}

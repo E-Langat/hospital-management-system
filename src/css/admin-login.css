@@ -1,0 +1,46 @@
+#admin {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#admin .admin-header {
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: var(--RegalBlue);
+    padding: 150px 50px 20px 50px;
+}
+
+#admin .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-size: 20px;
+}
+
+#admin .inputs input {
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+}
+
+#admin button {
+    background-color: var(--RegalBlue);
+    border: none;
+    padding: 8px 50px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+
+#admin {}
+
+#admin {}
+
+#admin {}
+
+#admin {}

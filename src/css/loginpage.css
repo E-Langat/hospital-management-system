@@ -1,0 +1,79 @@
+#login .two {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#login .two .login {
+    display: flex;
+    flex-direction: column;
+}
+
+#login .two .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+#login .two .login .email-input,
+#login .two .login .password-input {
+    padding: 10px;
+    margin-right: 30px;
+    flex: 1;
+}
+
+#login .two .checkbox {
+    display: flex;
+    padding: 20px 0;
+    color: var(--Gray);
+}
+
+#login .two .checkbox input {
+    width: 20px;
+    margin-right: 10px;
+}
+
+#login .two .login-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 150px;
+    width: 450px;
+}
+
+#login .two button {
+    width: 250px;
+    background-color: var(--RegalBlue);
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#login .two .login-button span {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--Gray);
+    font-size: 20px;
+}
+
+#login .two .login-button span img {
+    width: 20px;
+    padding: 0 0 0 10px;
+}
+
+#login .two .persona {
+    display: flex;
+}
+
+#login .two .persona figure {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px 30px;
+}

@@ -7,16 +7,16 @@
       </div>
       <div class="main">
         <HomePage />
-        <LoginPage />
+        <PatientRegistration />
       </div>
     </div>
   </div>
 </template>
 <script>
 import HomePage from "@/components/HomePage.vue";
-import LoginPage from "@/components/LoginPage.vue";
+import PatientRegistration from "@/components/PatientRegistration.vue";
 export default {
-  components: { LoginPage, HomePage },
+  components: { HomePage, PatientRegistration },
   props: {},
   data() {
     return {};

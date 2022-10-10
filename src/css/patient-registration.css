@@ -1,0 +1,41 @@
+#patient-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#patient-form form label {
+    align-items: center;
+    padding-bottom: 30px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#patient-form label .text-input {
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    flex: 1;
+}
+
+#patient-form form sup {
+    vertical-align: super;
+    font-size: 10px;
+    color: red;
+    margin-right: 30px;
+}
+
+#patient-form form .gender span {
+    color: var(--Gray);
+    margin: 0 10px;
+}
+
+#patient-form form .birth .star {
+    margin-right: 30px;
+}
+
+#patient-form form .birth input {
+    padding: 5px 10px;
+}
+
+#patient-form .bloo {}
