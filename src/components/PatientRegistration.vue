@@ -1,153 +1,159 @@
 <template>
   <div id="patient-form">
     <form action="SUBMIT">
-      <div>
-        <h2 class="name">First Name</h2>
-        <sup id="star"> &#9733; </sup>
+      <div class="row">
+        <div class="first">
+          <h2 class="name">First Name</h2>
+          <sup id="star"> &#9733; </sup>
+        </div>
         <input type="text" required class="text-input" />
       </div>
-      <div>
-        <h2 class="name">
-          Middle Name <sup id="star"> &#9733; </sup>
-          <input type="text" required class="text-input" />
-        </h2>
-      </div>
-      <div>
-        <h2 class="name">Last Name</h2>
-        <sup id="star"> &#9733; </sup>
+      <div class="row">
+        <div class="first">
+          <h2 class="name">Middle Name</h2>
+          <sup id="star"> &#9733; </sup>
+        </div>
         <input type="text" required class="text-input" />
       </div>
-      <div class="gender">
-        <h2 for="gender">
-          Gender
+      <div class="row">
+        <div class="first">
+          <h2 class="name">Last Name</h2>
+          <sup id="star"> &#9733; </sup>
+        </div>
+        <input type="text" required class="text-input" />
+      </div>
+      <div class="row">
+        <div class="first">
+          <h2 for="gender">Gender</h2>
           <sup id="star">&#9733;</sup>
+        </div>
+        <div class="gender">
           <input type="radio" />
           <span>Male </span>
           <input type="radio" />
           <span>Female </span>
-        </h2>
+        </div>
       </div>
-      <div>
-        <h2 class="birth">
-          Date of Birth <sup id="star"> &#9733; </sup><input type="date" />
-        </h2>
-      </div>
-      <div>
-        <h2 class="blood-group">
-          Blood Group <sup id="star"> &#9733; </sup>
-          <select name="blood-groups" id="blood-groups">
-            <option value="O+">O+</option>
-            <option value="O-">O-</option>
-            <option value="A+">A+</option>
-            <option value="B+">B+</option>
-            <option value="A-">A-</option>
-            <option value="B-">B-</option>
-            <option value="AB-">AB-</option>
-            <option value="AB+">AB+</option>
-          </select>
-        </h2>
-      </div>
-      <div>
-        <h2 for="symptoms" class="symptoms">
-          Symptoms
+      <div class="row">
+        <div class="first">
+          <h2 class="birth">Date of Birth</h2>
           <sup id="star"> &#9733; </sup>
-          <textarea
-            id="txtid"
-            name="txtname"
-            rows="5"
-            cols="50"
-            maxlength="300"
-          >
-            1.____
-            2.____
-          </textarea>
-        </h2>
+        </div>
+        <input type="date" class="date" />
       </div>
-      <div>
-        <h2 for="diagnosis-report" class="diagnosis-report">
-          Diagnosis Report
-          <input type="file" />
-        </h2>
-      </div>
-      <div>
-        <h2 for="diagnosis-report" class="diagnosis-report">
-          Diagnosis Report
-          <input type="file" />
-          <button class="delete">Delete</button>
-        </h2>
-      </div>
-      <div class="more">
-        <button>Add More Report</button>
-      </div>
-      <div>
-        <h2 for="address" class="address">
-          Address
+      <div class="row">
+        <div class="first">
+          <h2>Blood Group</h2>
           <sup id="star"> &#9733; </sup>
-          <input type="text" class="text-input" />
-        </h2>
+        </div>
+        <select name="blood-groups" id="blood-groups" class="blood-group">
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="A+">A+</option>
+          <option value="B+">B+</option>
+          <option value="A-">A-</option>
+          <option value="B-">B-</option>
+          <option value="AB-">AB-</option>
+          <option value="AB+">AB+</option>
+        </select>
       </div>
-      <div>
-        <h2 for="city" class="city">
-          City
+      <div class="row">
+        <div class="first">
+          <h2 for="symptoms" class="symptoms">Symptoms</h2>
           <sup id="star"> &#9733; </sup>
-          <input type="text" class="text-input" />
-        </h2>
+        </div>
+        <textarea
+          id="txtid"
+          name="txtname"
+          rows="5"
+          cols="50"
+          maxlength="300"
+          placeholder="Enter the symptoms"
+          class="text-field"
+        ></textarea>
       </div>
+
       <div>
-        <h2 for="state" class="state">
-          State
-          <input type="text" class="text-input" />
-        </h2>
+        <div class="row">
+          <h2 for="diagnosis-report" class="diagnosis-report">
+            Diagnosis Report
+          </h2>
+          <div class="file">
+            <input type="file" class="file" />
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+        <div class="report">
+          <button class="more">Add More Report</button>
+        </div>
       </div>
-      <div>
-        <h2 for="zip code" class="zip-code">
-          Zip code
+      <div class="row">
+        <div class="first">
+          <h2 for="address" class="address">Address</h2>
           <sup id="star"> &#9733; </sup>
+        </div>
+        <input type="text" class="text-input" />
+      </div>
+      <div class="row">
+        <div class="first">
+          <h2 for="city" class="city">City</h2>
+          <sup id="star"> &#9733; </sup>
+        </div>
+        <input type="text" class="text-input" />
+      </div>
+      <div class="row">
+        <h2 for="state" class="state">State</h2>
+        <input type="text" class="text-input" />
+      </div>
+      <div class="row">
+        <div class="first">
+          <h2 for="zip code" class="zip-code">Zip code</h2>
+          <sup id="star"> &#9733; </sup>
+        </div>
+        <input type="number" class="text-input" />
+      </div>
+      <div class="row">
+        <div class="first">
+          <h2 for="mobile">Mobile</h2>
+          <sup id="star"> &#9733; </sup>
+        </div>
+        <div class="mobile">
+          <input type="number" class="first" min="1" placeholder="+254" />
           <input type="number" class="text-input" />
-        </h2>
+        </div>
       </div>
-      <div>
-        <h2 for="mobile" class="mobile">
-          Mobile
+      <div class="row">
+        <h2 for="phone" class="phone">Phone</h2>
+        <input type="number" class="text-input" />
+      </div>
+      <div class="row">
+        <div class="first">
+          <h2 for="email" class="email">Email</h2>
           <sup id="star"> &#9733; </sup>
-          <input type="number" class="first" />
-          <input type="number" class="text-input" />
-        </h2>
+        </div>
+        <input type="email" class="text-input" />
       </div>
-      <div>
-        <h2 for="phone" class="phone">
-          Phone
-          <input type="number" class="text-input" />
-        </h2>
-      </div>
-      <div>
-        <h2 for="email" class="email">
-          Email
+      <div class="row">
+        <div class="first">
+          <h2 for="username" class="username">Username</h2>
           <sup id="star"> &#9733; </sup>
-          <input type="email" class="text-input" />
-        </h2>
+        </div>
+        <input type="text" class="text-input" />
       </div>
-      <div>
-        <h2 for="username" class="username">
-          Username
+      <div class="row">
+        <div class="first">
+          <h2 for="password" class="password">Password</h2>
           <sup id="star"> &#9733; </sup>
-          <input type="text" class="text-input" />
-        </h2>
+        </div>
+        <input type="password" class="text-input" />
       </div>
-      <div>
-        <h2 for="password" class="password">
-          Password
-          <sup id="star"> &#9733; </sup>
-          <input type="password" class="text-input" />
-        </h2>
+      <div class="row">
+        <h2 for="image" class="image">Image</h2>
+        <input type="file" accept=".png, .jpeg, .png" />
       </div>
-      <div>
-        <h2 for="image" class="image">
-          Image
-          <input type="file" accept=".png, .jpeg, .png" />
-        </h2>
+      <div class="submit-button">
+        <button type="submit">Patient Registration</button>
       </div>
-      <button type="submit">Patient Registration</button>
     </form>
   </div>
 </template>
